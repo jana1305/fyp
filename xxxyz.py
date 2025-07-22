@@ -13,8 +13,8 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import joblib
 
 # --- Load Dataset ---
-file_path = r"C:\Users\Jay\Desktop\M.Jay's Folder\APU\Degree\Year 3\SEM 2\FYP\archive (4)\bluebike_data (1).csv"
-df = pd.read_csv("bluebike_data(1).csv")  # Assumes it's in the same directory as your .py
+file_path = rbluebike_data (1).csv
+df = pd.read_csv(file_path)
 
 # --- Initial Cleaning ---
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]  # Remove unnamed columns if any
